@@ -5,7 +5,6 @@ import java.time.LocalDate;
 public class MethodExercises {
 
     public static void main(String[] args) {
-        System.out.println(returnName("Konrad"));
     }
 
     /*This method accepts year of birth as an argument and returns current age after calculating.*/
@@ -33,6 +32,11 @@ public class MethodExercises {
     /*This method checks if number is divide by 3 and 5.*/
     private static boolean isDivideBy3Or5(double num) {
         return num % 3 == 0 && num % 5 == 0;
+    }
+
+    /*This method returns a number raised to the power of 3.*/
+    private static double thirdPower(double num){
+        return Math.pow(num, 3);
     }
 
 }
