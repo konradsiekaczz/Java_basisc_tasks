@@ -9,12 +9,12 @@ public class MethodExercises {
     }
 
     /*This method accepts year of birth as an argument and returns current age after calculating.*/
-    private static int returnMyCurrentYear(int birthYear) {
+    public static int returnMyCurrentAge(int birthYear) {
         return LocalDate.now().getYear() - birthYear;
     }
 
     /*This method accepts name as an argument and returns it.*/
-    private static String returnName(String s) {
+    public static String returnName(String s) {
         return s;
     }
 
