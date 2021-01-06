@@ -3,7 +3,7 @@ package com.konrad;
 import java.time.LocalDate;
 import java.util.Scanner;
 
-public class Main {
+public class MethodExercises {
 
     public static void main(String[] args) {
         System.out.println(returnName("Konrad"));
@@ -17,5 +17,12 @@ public class Main {
     /*This method accepts name as an argument and returns it.*/
     private static String returnName(String s){
         return s;
+    }
+
+    /*This method prints basics calculating between two arguments.*/
+    private static void calculate(int x, int y){
+        System.out.println(x + y);
+        System.out.println(x - y);
+        System.out.println(x * y);
     }
 }
