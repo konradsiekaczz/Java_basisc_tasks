@@ -31,7 +31,7 @@ public class MethodExercises {
     }
 
     /*This method checks if number is divide by 3 and 5.*/
-    public static boolean isDivideBy3Or5(double num) {
+    public static boolean isDivisibleByThreeAndFive(double num) {
         return num % 3 == 0 && num % 5 == 0;
     }
 
