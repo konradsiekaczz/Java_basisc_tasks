@@ -5,7 +5,7 @@ import java.time.LocalDate;
 public class MethodExercises {
 
     public static void main(String[] args) {
-        System.out.println(canMakeTriangle(3,4,5));
+        System.out.println(canMakeTriangle(3, 4, 5));
     }
 
     /*This method accepts year of birth as an argument and returns current age after calculating.*/
@@ -36,15 +36,17 @@ public class MethodExercises {
     }
 
     /*This method returns a number raised to the power of 3.*/
-    private static double thirdPower(double num){
+    private static double thirdPower(double num) {
         return Math.pow(num, 3);
     }
+
     /*This method returns a square root of number.*/
-    private static double squareRoot(int num){
+    private static double squareRoot(int num) {
         return Math.sqrt(num);
     }
+
     /*This method checks if we can build a right triangle using three number as an arguments.*/
-    private static boolean canMakeTriangle(int a, int b, int c){
-        return Math.pow(a,2) + Math.pow(b,2) == Math.pow(c,2);
+    private static boolean canMakeTriangle(int a, int b, int c) {
+        return Math.pow(a, 2) + Math.pow(b, 2) == Math.pow(c, 2);
     }
 }
