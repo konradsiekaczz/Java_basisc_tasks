@@ -1,13 +1,19 @@
 import com.konrad.MethodExercises;
-import org.junit.gen5.api.BeforeAll;
-import org.junit.gen5.api.Test;
+import org.junit.Assert;
+import org.junit.Before;
+import org.junit.Test;
 
 public class MethodExercisesTests {
 
     private MethodExercises methodExercises;
 
-    @BeforeAll
-    public void setUp(){
+    @Before
+    public void setUp() {
         methodExercises = new MethodExercises();
+    }
+
+    @Test
+    public void should_return_31() {
+        Assert.assertEquals(31, MethodExercises.returnMyCurrentAge(1990));
     }
 }
