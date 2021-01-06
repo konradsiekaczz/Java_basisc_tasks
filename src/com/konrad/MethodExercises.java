@@ -1,7 +1,6 @@
 package com.konrad;
 
 import java.time.LocalDate;
-import java.util.Scanner;
 
 public class MethodExercises {
 
@@ -24,5 +23,10 @@ public class MethodExercises {
         System.out.println(x + y);
         System.out.println(x - y);
         System.out.println(x * y);
+    }
+
+    /*This method checks if number is even.*/
+    private static boolean isEven(double number){
+        return number % 2 ==0;
     }
 }
