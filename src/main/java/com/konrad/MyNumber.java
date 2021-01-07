@@ -31,4 +31,8 @@ public class MyNumber {
         return new MyNumber(num - x.num);
     }
 
+    @Override
+    public String toString() {
+        return String.valueOf(num);
+    }
 }
