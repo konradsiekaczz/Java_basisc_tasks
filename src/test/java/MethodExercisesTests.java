@@ -37,4 +37,9 @@ public class MethodExercisesTests {
         Assert.assertTrue(String.valueOf(true),MethodExercises.isDivisibleByThreeAndFive(15));
     }
 
+    @Test
+    public void should_return_nine_for_three_to_the_third_power(){
+        Assert.assertEquals(27, MethodExercises.thirdPower(3),0);
+    }
+
 }
