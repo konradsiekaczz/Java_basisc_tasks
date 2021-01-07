@@ -42,4 +42,14 @@ public class MethodExercisesTests {
         Assert.assertEquals(27, MethodExercises.thirdPower(3),0);
     }
 
+    @Test
+    public void should_return_two_for_the_square_root_of_four(){
+        Assert.assertEquals(2, MethodExercises.squareRoot(4),0);
+    }
+
+    @Test
+    public void should_return_the_truth_for_the_sides_from_which_a_triangle_can_be_formed(){
+        Assert.assertTrue(String.valueOf(true), MethodExercises.canMakeTriangle(3,4,5));
+    }
+
 }
