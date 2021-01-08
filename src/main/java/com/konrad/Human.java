@@ -5,9 +5,9 @@ public class Human {
     private int weight;
     private int height;
     private String name;
-    private int gender;
+    private String gender;
 
-    public Human(int age, int weight, int height, String name, int gender) {
+    public Human(int age, int weight, int height, String name, String gender) {
         this.age = age;
         this.weight = weight;
         this.height = height;
@@ -31,7 +31,7 @@ public class Human {
         return name;
     }
 
-    public int getGender() {
+    public String getGender() {
         return gender;
     }
 
