@@ -4,10 +4,10 @@ public class Human {
     private int age;
     private int weight;
     private int height;
-    private int name;
+    private String name;
     private int gender;
 
-    public Human(int age, int weight, int height, int name, int gender) {
+    public Human(int age, int weight, int height, String name, int gender) {
         this.age = age;
         this.weight = weight;
         this.height = height;
@@ -27,7 +27,7 @@ public class Human {
         return height;
     }
 
-    public int getName() {
+    public String getName() {
         return name;
     }
 
