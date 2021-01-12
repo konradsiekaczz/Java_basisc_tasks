@@ -18,6 +18,11 @@ public class MyNumberTests {
 
     @Test
     public void should_return_true_for_odd_number() {
-        Assert.assertTrue("Number is odd",myNumber.isOdd());
+        Assert.assertTrue("Number is odd", myNumber.isOdd());
+    }
+
+    @Test
+    public void should_return_false_for_not_even_number() {
+        Assert.assertFalse("Number is not even", myNumber.isEven());
     }
 }
