@@ -25,4 +25,10 @@ public class MyNumberTests {
     public void should_return_false_for_not_even_number() {
         Assert.assertFalse("Number is not even", myNumber.isEven());
     }
+
+    @Test
+    public void should_return_two_for_sqrt_from_four(){
+        double result = myNumber.sqrt();
+        Assert.assertEquals(Math.sqrt(myNumber.getNum()),result,0);
+    }
 }
