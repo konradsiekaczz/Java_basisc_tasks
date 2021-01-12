@@ -1,13 +1,23 @@
 import com.konrad.MyNumber;
 import org.junit.Assert;
+import org.junit.Before;
 import org.junit.Test;
 
 public class MyNumberTests {
     private MyNumber myNumber;
-    @Test
-    public void should_create_myNumber(){
-        myNumber = new MyNumber(20);
 
-        Assert.assertEquals(20,myNumber.getNum());
+    @Before
+    public void setUp() {
+        myNumber = new MyNumber(21);
+    }
+
+    @Test
+    public void should_create_myNumber() {
+        Assert.assertEquals(21, myNumber.getNum());
+    }
+
+    @Test
+    public void should_return_true_for_odd_number() {
+        Assert.assertTrue("Number is odd",myNumber.isOdd());
     }
 }
