@@ -1,13 +1,13 @@
 package com.konrad;
 
 public class MyNumber {
-    private long num;
+    private double num;
 
-    public MyNumber(long num) {
+    public MyNumber(double num) {
         this.num = num;
     }
 
-    public long getNum() {
+    public double getNum() {
         return num;
     }
 
@@ -19,19 +19,19 @@ public class MyNumber {
         return num % 2 == 0;
     }
 
-    public long sqrt(){
-        return (long) Math.sqrt(num);
+    public double sqrt() {
+        return Math.sqrt(num);
     }
 
-    public MyNumber pow(MyNumber x){
-        return new MyNumber((long) Math.pow(num,x.num));
+    public MyNumber pow(MyNumber x) {
+        return new MyNumber(Math.pow(num, x.num));
     }
 
-    public MyNumber add(MyNumber x){
+    public MyNumber add(MyNumber x) {
         return new MyNumber(num + x.num);
     }
 
-    public MyNumber subtract(MyNumber x){
+    public MyNumber subtract(MyNumber x) {
         return new MyNumber(num - x.num);
     }
 
