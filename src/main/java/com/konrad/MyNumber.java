@@ -7,6 +7,10 @@ public class MyNumber {
         this.num = num;
     }
 
+    public long getNum() {
+        return num;
+    }
+
     public boolean isOdd() {
         return num % 2 != 0;
     }
