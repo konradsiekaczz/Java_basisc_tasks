@@ -1,4 +1,4 @@
-package com.konrad;
+package com.konrad.objects;
 
 public class Rectangle {
     private double length;

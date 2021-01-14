@@ -1,4 +1,4 @@
-package com.konrad;
+package com.konrad.objects;
 
 public class Human {
     private int age;

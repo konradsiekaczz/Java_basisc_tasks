@@ -1,7 +1,7 @@
-package com.konrad;
+package com.konrad.arrays;
 
 
-import java.util.Collections;
+import com.konrad.objects.Human;
 
 public class Arrays {
 

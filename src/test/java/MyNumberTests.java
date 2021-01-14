@@ -1,4 +1,4 @@
-import com.konrad.MyNumber;
+import com.konrad.objects.MyNumber;
 import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
@@ -31,4 +31,7 @@ public class MyNumberTests {
         double result = myNumber.sqrt();
         Assert.assertEquals(Math.sqrt(myNumber.getNum()),result,0);
     }
+
+    @Test
+    public void sh
 }

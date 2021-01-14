@@ -1,4 +1,4 @@
-package com.konrad;
+package com.konrad.methods;
 
 import java.time.LocalDate;
 

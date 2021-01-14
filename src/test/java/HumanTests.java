@@ -1,4 +1,4 @@
-import com.konrad.Human;
+import com.konrad.objects.Human;
 import org.junit.Assert;
 import org.junit.Test;
 
