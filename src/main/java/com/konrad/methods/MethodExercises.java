@@ -4,10 +4,6 @@ import java.time.LocalDate;
 
 public class MethodExercises {
 
-    public static void main(String[] args) {
-        System.out.println(canMakeTriangle(3, 4, 5));
-    }
-
     /*This method accepts year of birth as an argument and returns current age after calculating.*/
     public static int returnMyCurrentAge(int birthYear) {
         return LocalDate.now().getYear() - birthYear;
