@@ -1,17 +1,6 @@
 package com.konrad.arrays;
 
-
-import com.konrad.objects.Human;
-
 public class Arrays {
-
-    public static void main(String[] args) {
-        Object[] array = new Object[]{new Arrays(), new Human(2, 2, 2, "k", "e")};
-
-        reverseElements(array);
-
-        System.out.println(java.util.Arrays.toString(array));
-    }
 
     /*This method return five first letter of alphabet*/
     public static String[] returnLetters() {
