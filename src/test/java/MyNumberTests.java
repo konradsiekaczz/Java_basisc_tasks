@@ -13,7 +13,7 @@ public class MyNumberTests {
 
     @Test
     public void should_create_myNumber() {
-        Assert.assertEquals(21, myNumber.getNum());
+        Assert.assertEquals(21, myNumber.getNum(),0);
     }
 
     @Test
@@ -33,8 +33,20 @@ public class MyNumberTests {
     }
 
     @Test
-    public void should_return_new_object_with_parameter_raised_to_the_power_of_field(){
+    public void should_return_new_object_with_parameter_raised_to_the_power_of_field() {
         MyNumber result = myNumber.pow(new MyNumber(2));
-        Assert.assertEquals(441.0,result.getNum(),0);
+        Assert.assertEquals(441.0, result.getNum(), 0);
+    }
+
+    @Test
+    public void should_return_new_object_where_sum_is_from_adding_field_parameter_and_object(){
+        MyNumber result = myNumber.add(new MyNumber(2));
+        Assert.assertEquals(23,result.getNum(),0);
+    }
+
+    @Test
+    public void should_return_new_object_with_difference_between_field_from_parameter_and_object(){
+        MyNumber result = myNumber.subtract(new MyNumber(2));
+        Assert.assertEquals(19,result.getNum(),0);
     }
 }
