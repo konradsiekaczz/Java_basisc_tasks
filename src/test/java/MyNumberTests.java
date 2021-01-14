@@ -27,11 +27,14 @@ public class MyNumberTests {
     }
 
     @Test
-    public void should_return_two_for_sqrt_from_four(){
+    public void should_return_two_for_sqrt_from_four() {
         double result = myNumber.sqrt();
-        Assert.assertEquals(Math.sqrt(myNumber.getNum()),result,0);
+        Assert.assertEquals(Math.sqrt(myNumber.getNum()), result, 0);
     }
 
     @Test
-    public void sh
+    public void should_return_new_object_with_parameter_raised_to_the_power_of_field(){
+        MyNumber result = myNumber.pow(new MyNumber(2));
+        Assert.assertEquals(441.0,result.getNum(),0);
+    }
 }
