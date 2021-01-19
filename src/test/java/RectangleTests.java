@@ -29,6 +29,5 @@ public class RectangleTests {
         double result = rectangle.calculateDiagonal();
         System.out.println(result);
         Assert.assertEquals(4.47, result, 0);
-
     }
 }
