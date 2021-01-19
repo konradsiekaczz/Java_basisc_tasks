@@ -15,12 +15,20 @@ public class RectangleTests {
     @Test
     public void should_return_area_off_rectangle() {
         double result = rectangle.calculateArea();
-        Assert.assertEquals(8, rectangle.calculateArea(), 0);
+        Assert.assertEquals(8, result, 0);
     }
 
     @Test
-    public void should_retur_perimeter_for_rectangle() {
+    public void should_return_perimeter_for_rectangle() {
         double result = rectangle.calculatePerimeter();
-        Assert.assertEquals(12, rectangle.calculatePerimeter(), 0);
+        Assert.assertEquals(12, result, 0);
+    }
+
+    @Test
+    public void should_return_diagonal_of_rectangle(){
+        double result = rectangle.calculateDiagonal();
+        System.out.println(result);
+        Assert.assertEquals(4.47, result, 0);
+
     }
 }
