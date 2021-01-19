@@ -17,7 +17,7 @@ public class Rectangle {
         return 2 * length + 2 * width;
     }
 
-    public double calculateDiagonal(){
-        return Math.sqrt(Math.pow(2,length) + Math.pow(2, width));
+    public double calculateDiagonal() {
+        return (double) Math.round(Math.sqrt(Math.pow(2, length) + Math.pow(2, width))*100)/100;
     }
 }
