@@ -18,6 +18,6 @@ public class Rectangle {
     }
 
     public double calculateDiagonal() {
-        return (double) Math.round(Math.sqrt(Math.pow(2, length) + Math.pow(2, width))*100)/100;
+        return (double) Math.round(Math.sqrt(Math.pow(2, length) + Math.pow(2, width)) * 100) / 100;
     }
 }
