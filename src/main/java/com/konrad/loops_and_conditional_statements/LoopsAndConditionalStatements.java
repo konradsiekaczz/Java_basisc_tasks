@@ -8,8 +8,7 @@ public class LoopsAndConditionalStatements {
     private static BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 
     public static void main(String[] args) throws IOException {
-//        printFrom0ToNFromInput();
-//        printFrom0ToN(2);
+        System.out.println(reverseString("pies"));
         printCharPerLine(123);
     }
 
@@ -34,17 +33,21 @@ public class LoopsAndConditionalStatements {
         }
     }
 
-    public static void printReverseInputNumber(long num){
+    public static void printReverseInputNumber(long num) {
         String numToString = String.valueOf(num);
-        for (int i = numToString.length() -1; i >= 0; i--) {
+        for (int i = numToString.length() - 1; i >= 0; i--) {
             System.out.println(numToString.charAt(i));
         }
     }
 
-    public static void printCharPerLine(long num){
-        while (num >0){
-            System.out.println(num%10);
+    public static void printCharPerLine(long num) {
+        while (num > 0) {
+            System.out.println(num % 10);
             num /= 10;
         }
+    }
+
+    public static String reverseString(String word) {
+        return new StringBuilder(word).reverse().toString();
     }
 }
