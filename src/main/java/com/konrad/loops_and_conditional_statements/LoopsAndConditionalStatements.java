@@ -10,7 +10,7 @@ public class LoopsAndConditionalStatements {
     public static void main(String[] args) throws IOException {
 //        printFrom0ToNFromInput();
 //        printFrom0ToN(2);
-        printReverseInputNumber(123);
+        printCharPerLine(123);
     }
 
     public static void printFrom0ToNFromInput() throws IOException {
@@ -38,6 +38,13 @@ public class LoopsAndConditionalStatements {
         String numToString = String.valueOf(num);
         for (int i = numToString.length() -1; i >= 0; i--) {
             System.out.println(numToString.charAt(i));
+        }
+    }
+
+    public static void printCharPerLine(long num){
+        while (num >0){
+            System.out.println(num%10);
+            num /= 10;
         }
     }
 }
