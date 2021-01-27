@@ -8,8 +8,8 @@ public class LoopsAndConditionalStatements {
     private static BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 
     public static void main(String[] args) throws IOException {
-        System.out.println(reverseString("pies"));
-        printCharPerLine(123);
+        System.out.println(toBinary(1234));
+        System.out.println(Integer.toBinaryString(1234));
     }
 
     public static void printFrom0ToNFromInput() throws IOException {
@@ -49,5 +49,15 @@ public class LoopsAndConditionalStatements {
 
     public static String reverseString(String word) {
         return new StringBuilder(word).reverse().toString();
+    }
+
+    public static String toBinary(long num) {
+        String binaryRepresentation = "";
+        while (num > 0){
+            long remainder = num % 2;
+            binaryRepresentation = binaryRepresentation.concat(String.valueOf(remainder));
+            num /= 2;
+        }
+        return reverseString(binaryRepresentation);
     }
 }
