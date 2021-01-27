@@ -8,8 +8,9 @@ public class LoopsAndConditionalStatements {
     private static BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 
     public static void main(String[] args) throws IOException {
-        printFrom0ToNFromInput();
-        printFrom0ToN(2);
+//        printFrom0ToNFromInput();
+//        printFrom0ToN(2);
+        printReverseInputNumber(123);
     }
 
     public static void printFrom0ToNFromInput() throws IOException {
@@ -30,6 +31,13 @@ public class LoopsAndConditionalStatements {
     public static void printFrom0ToN(int n) {
         for (int i = 0; i < n; i++) {
             System.out.println(i);
+        }
+    }
+
+    public static void printReverseInputNumber(long num){
+        String numToString = String.valueOf(num);
+        for (int i = numToString.length() -1; i >= 0; i--) {
+            System.out.println(numToString.charAt(i));
         }
     }
 }
