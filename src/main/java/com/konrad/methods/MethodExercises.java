@@ -1,14 +1,18 @@
 package com.konrad.methods;
 
 import java.time.LocalDate;
+import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
+import java.util.stream.Collectors;
 
 public class MethodExercises {
     public static void main(String[] args) {
-        List<Integer> list = Arrays.asList(1,2,3,4,5);
-        System.out.println(getElement(list, 2));
-        System.out.println(kthOdd(list, 2));
+
+        Object[] ar = new Object[]{"Banana", "Orange", "Apple", "Mango", 5, 8, 1};
+        Object[] ar1 = new Object[]{2, 6, 1, 9, 4, 5};
+        Object[] ar2 = new Object[0];
+        dbSort(ar);
     }
 
     /*This method accepts year of birth as an argument and returns current age after calculating.*/
@@ -88,5 +92,32 @@ public class MethodExercises {
 
         // Total odd elements in the array are < k
         return -1;
+    }
+
+    public static Object[] dbSort(Object[] a) {
+
+        Object[] objects;
+        List<Object> integers = new ArrayList<>();
+        List<Object> strings = new ArrayList<>();
+
+        addElementFromArrayToList(a, integers, strings);
+
+        integers = integers.stream().sorted().collect(Collectors.toList());
+        strings = strings.stream().sorted().collect(Collectors.toList());
+
+        integers.addAll(strings);
+        objects = integers.stream().toArray();
+
+        return objects;
+    }
+
+    private static void addElementFromArrayToList(Object[] a, List<Object> integers, List<Object> strings) {
+        for (int i = 0; i < a.length; i++) {
+            if (a[i].getClass().equals(Integer.class)) {
+                integers.add(a[i]);
+            } else {
+                strings.add(a[i]);
+            }
+        }
     }
 }
