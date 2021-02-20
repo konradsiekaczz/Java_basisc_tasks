@@ -3,6 +3,7 @@ package com.konrad.loops_and_conditional_statements;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
+import java.util.Arrays;
 
 public class LoopsAndConditionalStatements {
     private static BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
@@ -11,6 +12,9 @@ public class LoopsAndConditionalStatements {
         System.out.println(toBinary(1234));
         System.out.println(Integer.toBinaryString(1234));
         System.out.println(checkIfPalindrome("kot"));
+
+        ArrayFactory arrayFactory = new ArrayFactory(3);
+        System.out.println(Arrays.deepToString(arrayFactory.unitMatrix()));
     }
 
     public static void printFrom0ToNFromInput() throws IOException {
