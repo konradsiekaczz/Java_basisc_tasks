@@ -10,6 +10,7 @@ public class LoopsAndConditionalStatements {
     public static void main(String[] args) throws IOException {
         System.out.println(toBinary(1234));
         System.out.println(Integer.toBinaryString(1234));
+        System.out.println(checkIfPalindrome("kot"));
     }
 
     public static void printFrom0ToNFromInput() throws IOException {
@@ -59,5 +60,10 @@ public class LoopsAndConditionalStatements {
             num /= 2;
         }
         return reverseString(binaryRepresentation);
+    }
+
+    public static boolean checkIfPalindrome(String str){
+        String palindrome = new StringBuilder(str).reverse().toString();
+        return str.equals(palindrome);
     }
 }
