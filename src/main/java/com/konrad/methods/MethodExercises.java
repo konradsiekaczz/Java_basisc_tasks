@@ -8,6 +8,9 @@ import java.util.stream.Collectors;
 
 public class MethodExercises {
     public static void main(String[] args) {
+        List<Integer> list = Arrays.asList(1, 3, 5, 7, 9, 11);
+        System.out.println(getElement(list, 3));
+        System.out.println(kthOdd(list, 3));
 
         Object[] ar = new Object[]{"Banana", "Orange", "Apple", "Mango", 5, 8, 1};
         Object[] ar1 = new Object[]{2, 6, 1, 9, 4, 5};
@@ -76,23 +79,31 @@ public class MethodExercises {
     }
     /*This method find the n-th odd element from the given list.*/
 
-    static int kthOdd(List<Integer> list, int k) {
+    static int kthOdd(List<Integer> list, int n) {
 
         // Traverse the array
         for (int i = 0; i < list.size(); i++) {
 
             // If current element is odd
             if (list.get(i) % 2 == 1)
-                k--;
+                n--;
 
             // If kth odd element is found
-            if (k == 0)
+            if (n == 0)
                 return list.get(i);
         }
 
         // Total odd elements in the array are < k
         return -1;
     }
+
+    /*This method return reverse string.*/
+
+    public static String getReverseString(String str) {
+        return str = new StringBuilder(str).reverse().toString();
+    }
+
+    /*This method sort array with object type as String and Integer.*/
 
     public static Object[] dbSort(Object[] a) {
 
@@ -110,6 +121,9 @@ public class MethodExercises {
 
         return objects;
     }
+
+    /*This method add element to specific array with type Integer or String.
+    * This method is used by method dbSort()*/
 
     private static void addElementFromArrayToList(Object[] a, List<Object> integers, List<Object> strings) {
         for (int i = 0; i < a.length; i++) {
